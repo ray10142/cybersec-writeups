@@ -25,7 +25,7 @@ Based in Tunisia — actively building toward remote junior roles.
 | Platform | Machines / Rooms | Easy | Medium | Hard |
 |----------|-----------------|------|--------|------|
 | TryHackMe | 1 | 1 | 0 | 0 |
-| HackTheBox | 0 | 0 | 0 | 0 |
+| HackTheBox | 1 | 1 | 0 | 0 |
 | Blue Team Labs | 0 | — | — | — |
 
 > Updated regularly — each write-up is committed the same day.
@@ -56,7 +56,7 @@ cybersec-writeups/
 | Date | Name | Platform | Difficulty | Tags |
 |------|------|----------|------------|------|
 | 2026-05-25 | RootMe | TryHackMe | Easy | `#linux` `#fileupload` `#suid` |
-
+| 2026-05-25 | Appointment | HackTheBox | Easy | `#linux` `#sqli` `#authentication-bypass` |
 ---
 
 ## 🎯 Certifications roadmap
