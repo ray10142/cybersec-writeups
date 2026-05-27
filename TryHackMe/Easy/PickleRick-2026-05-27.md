@@ -104,7 +104,7 @@ less clue.txt
 less Sup3rS3cretPickl3Ingred.txt
 ```
 
-→ `mr. meeseek hair`
+→ `THM{REDACTED}`
 
 ### Ingredient #2
 
@@ -114,7 +114,7 @@ ls /home/rick
 less /home/rick/"second ingredient"
 ```
 
-→ `1 jerry tear`
+→ `THM{REDACTED}`
 
 ### Ingredient #3 — Privilege Escalation
 
@@ -134,7 +134,7 @@ sudo ls /root
 sudo less /root/3rd.txt
 ```
 
-→ `fleeb juice`
+→ `THM{REDACTED}`
 
 ---
 
