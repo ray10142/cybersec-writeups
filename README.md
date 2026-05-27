@@ -64,16 +64,6 @@ cybersec-writeups/
 | 2026-05-28 | Mr Robot CTF | TryHackMe | Medium | `#wordpress` `#hydra` `#rce` `#suid` `#privesc` |
 ---
 
-## 🎯 Certifications roadmap
-
-- [ ] **BTL1** — Blue Team Labs Level 1 *(in progress)*
-- [ ] **eJPT** — eLearnSecurity Junior Penetration Tester
-- [ ] **PJPT** — Practical Junior Penetration Tester
-- [ ] **PNPT** — Practical Network Penetration Tester
-- [ ] **OSCP** — Offensive Security Certified Professional *(long term)*
-
----
-
 ## 🛠️ Tools & skills
 
 `Nmap` `Gobuster` `Metasploit` `Burp Suite` `Wireshark` `Hydra`  
