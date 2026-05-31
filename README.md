@@ -24,7 +24,7 @@ Based in Tunisia — actively building toward remote junior roles.
 
 | Platform | Machines / Rooms | Easy | Medium | Hard |
 |----------|-----------------|------|--------|------|
-| TryHackMe | 7 | 4 | 3 | 0 |
+| TryHackMe | 8 | 4 | 4 | 0 |
 | HackTheBox | 2 | 2 | 0 | 0 |
 | Blue Team Labs | 0 | — | — | — |
 
@@ -64,6 +64,7 @@ cybersec-writeups/
 | 2026-05-28 | Mr Robot CTF | TryHackMe | Medium | `#wordpress` `#hydra` `#rce` `#suid` `#privesc` |
 | 2026-05-30 | Anonymous | TryHackMe | Medium | `#ftp` `#cronjob` `#suid` `#privesc` |
 | 2026-05-30 | Wonderland | TryHackMe | Medium | `#python` `#library-hijacking` `#path-hijacking` `#capabilities` |
+| 2026-05-31 | Creative | TryHackMe | Medium | `#ssrf` `#vhost` `#ld_preload` `#privesc` |
 ---
 
 ## 🛠️ Tools & skills
