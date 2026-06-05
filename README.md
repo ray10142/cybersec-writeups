@@ -24,8 +24,8 @@ Based in Tunisia — actively building toward remote junior roles.
 
 | Platform | Machines / Rooms | Easy | Medium | Hard |
 |----------|-----------------|------|--------|------|
-| TryHackMe | 9 | 4 | 5 | 0 |
-| HackTheBox | 2 | 2 | 0 | 0 |
+| TryHackMe | 10 | 5 | 5 | 0 |
+| HackTheBox | 1 | 1 | 0 | 0 |
 | Blue Team Labs | 0 | — | — | — |
 
 > Updated regularly — each write-up is committed the same day.
