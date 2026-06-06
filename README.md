@@ -24,7 +24,7 @@ Based in Tunisia — actively building toward remote junior roles.
 
 | Platform | Machines / Rooms | Easy | Medium | Hard |
 |----------|-----------------|------|--------|------|
-| TryHackMe | 11 | 5 | 6 | 0 |
+| TryHackMe | 12 | 5 | 7 | 0 |
 | HackTheBox | 1 | 1 | 0 | 0 |
 | Blue Team Labs | 0 | — | — | — |
 
@@ -67,6 +67,7 @@ cybersec-writeups/
 | 2026-05-31 | Creative | TryHackMe | Medium | `#ssrf` `#vhost` `#ld_preload` `#privesc` |
 | 2026-06-05 | Attacktive Directory | TryHackMe | Medium | `#activedirectory` `#kerberos` `#asreproasting` `#dcsync` `#passthehash` |
 | 2026-06-05 | Dogcat | TryHackMe | Medium | `#linux` `#web` `#lfi` `#logpoisoning` `#php` `#docker` `#privesc` `#rce` |
+| 2026-06-06 | Dumping Router Firmware | TryHackMe | Easy | #firmware #iot #embedded-linux #binwalk #jffs2 #hardware |
 ---
 
 ## 🛠️ Tools & skills
