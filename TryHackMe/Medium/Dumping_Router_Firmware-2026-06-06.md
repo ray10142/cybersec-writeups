@@ -197,12 +197,19 @@ Three network folders found:
 
 ## Lessons Learned
 
->- **Firmware is just a structured binary — strings and binwalk are enough to start.** Before mounting anything, `strings` gave immediate high-value context: device name, OS, boot messages. Never underestimate static string extraction as a first recon step on any binary blob.
-- **binwalk misidentification is normal — don't stop at failed extractions.** The `6870` file appeared to fail, but a second `binwalk` pass on it still revealed the kernel version. A "bad" extraction can still yield useful intelligence; always do a recursive pass on extracted blobs.
-- **JFFS2 is the standard flash filesystem for embedded Linux — learn to mount it.** The mounting workflow (`mknod`, `modprobe`, `dd`, `mount -t jffs2`) is non-obvious and very manual. Knowing this process means you can explore any JFFS2 image from routers, IoT devices, or access points, not just this one.
-- **BusyBox tells you a lot about the attack surface.** A firmware full of BusyBox symlinks means a minimal, stripped environment — no package manager, limited tooling. If you ever get a shell on such a device, you adapt your techniques accordingly (no `wget`, no `gcc`, possibly no `bash`).
-- **`/etc` is always the goldmine.** Dropbear config, firmware version, build date, default system config — everything operationally useful lived in `/etc`. On a real engagement, this directory would be the first place to look for default credentials, exposed services, or misconfigurations.
-- **IoT firmware analysis is transferable to real hardware hacking.** The same workflow applies when physically dumping firmware via UART, JTAG, or flash chip reading. This room builds the analysis muscle — the extraction method changes, the analysis doesn't.
+🔴 Côté Attaquant (Offensive)
+
+strings comme premier réflexe → avant tout outil complexe, strings sur un binaire firmware donne immédiatement le nom du device, l'OS, les messages de boot. Coût : zéro. Valeur : énorme.
+binwalk récursif → une extraction ratée n'est pas une impasse. Toujours relancer binwalk -e sur les blobs extraits — le fichier 6870 semblait inutilisable mais a quand même livré la version du kernel.
+Monter JFFS2 manuellement → workflow non-trivial (mknod, modprobe, dd, mount -t jffs2) à mémoriser. S'applique à n'importe quel firmware IoT/router extrait physiquement via UART, JTAG ou lecture de chip flash.
+/etc en priorité → Dropbear config, version firmware, build date, credentials par défaut — tout ce qui est exploitable en engagement réel est là.
+
+
+🔵 Côté Défenseur (Defensive / Blue Team)
+
+Un firmware public = surface d'analyse complète pour un attaquant. Les versions, services exposés et configurations par défaut ne devraient jamais être trivialement extractibles.
+BusyBox = environnement minimal → sur un device réel compromis, adapter les techniques (pas de wget, pas de gcc, parfois pas de bash).
+Désactiver Dropbear ou changer les credentials par défaut est critique — ils sont lisibles statiquement dans le firmware.
 
 ---
 

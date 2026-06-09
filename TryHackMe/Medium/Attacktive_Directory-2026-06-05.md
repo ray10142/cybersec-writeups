@@ -156,15 +156,23 @@ type "C:\Users\Administrator\Desktop\root.txt"
 
 ## Lessons Learned
 
-**1.** Port 88 (Kerberos) open = Domain Controller confirmed — always check for AS-REP Roasting on accounts with pre-auth disabled (`UF_DONT_REQUIRE_PREAUTH`).
+🔴 Côté Attaquant (Offensive)
 
-**2.** Non-standard SMB shares are always worth enumerating — the `backup` share exposed base64-encoded credentials that unlocked a full DCSync attack.
+Port 88 ouvert = DC confirmé → tester AS-REP Roasting immédiatement → GetNPUsers.py sur une wordlist d'utilisateurs est le premier réflexe. Un compte avec UF_DONT_REQUIRE_PREAUTH rend le TGT hash crackable offline.
+Les shares SMB non-standards sont toujours prioritaires → ADMIN$, C$, SYSVOL sont standards et souvent inaccessibles. Un share custom comme backup est le vrai vecteur — toujours énumérer et tenter l'accès avec chaque set de credentials obtenu.
+Credentials en base64 dans un fichier = encoding, pas chiffrement → réflexe automatique : base64 -d sur tout blob suspect dans un share ou un fichier de config.
+DCSync (DRSUAPI) = dump complet de NTDS.DIT sans toucher le disque du DC → si un compte a des droits de réplication, secretsdump.py suffit pour extraire tous les hashes du domaine. Extrêmement discret en environnement réel.
+Pass-the-Hash bypass total → pas besoin du mot de passe en clair. Le hash NTLM suffit pour evil-winrm, smbclient, psexec. Toujours tenter PtH avant de cracker.
+Comptes partageant le même hash NTLM qu'Administrator → a-spooks était un compte admin caché identique à Administrator. Sans le dump complet, il aurait été invisible.
 
-**3.** The `backup` account had DCSync privileges (DRSUAPI replication rights), allowing a complete dump of NTDS.DIT without ever touching disk on the DC — extremely stealthy in real environments.
 
-**4.** Pass-the-Hash bypasses password requirements entirely — NTLM hashes from secretsdump are enough for full domain access via WinRM, SMB, or PSExec.
+🔵 Côté Défenseur (Defensive / Blue Team)
 
-**5.** Always look for accounts sharing the same NTLM hash as Administrator — `a-spooks` was a hidden backdoor admin account that would have been missed without the full dump.
+Désactiver la pré-authentification Kerberos uniquement si absolument nécessaire — chaque compte avec DONT_REQUIRE_PREAUTH est une cible AS-REP Roasting.
+Auditer les droits de réplication AD — seuls les DCs légitimes doivent avoir les privilèges DRSUAPI. Un compte backup avec ces droits est une misconfiguration critique.
+Ne jamais stocker des credentials dans des shares SMB, même encodés en base64.
+Monitorer les événements 4662 (accès objet AD avec droits de réplication) — signature directe d'un DCSync.
+Auditer les comptes partageant le même hash NTLM — signe de backdoors ou de comptes clonés.
 
 ---
 
