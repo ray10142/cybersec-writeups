@@ -3,7 +3,6 @@
 > **Date:** 2026-06-10 **Platform:** TryHackMe **Difficulty:** Medium **Tags:** `#redis` `#ntlmv2` `#responder` `#smb` `#ps1-hijack` `#SeImpersonatePrivilege` `#GodPotato` `#windows` `#activedirectory`
 
 ---
-
 ## Summary
 
 > This room focuses on exploiting an unauthenticated Redis instance exposed on port 6379 on a Windows Domain Controller. The attack chain involves forcing an NTLM authentication via a Redis UNC path trick captured by Responder, cracking the NTLMv2 hash, accessing an SMB share to hijack a scheduled PowerShell script for initial foothold, and escalating to SYSTEM via SeImpersonatePrivilege using GodPotato.
