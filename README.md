@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/TryHackMe-Active-red?style=flat-square&logo=tryhackme" />
   <img src="https://img.shields.io/badge/HackTheBox-Active-green?style=flat-square&logo=hackthebox" />
   <img src="https://img.shields.io/badge/Focus-Blue%20Team%20%7C%20Pentest-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Write--ups-Daily-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/Write--ups-Active-orange?style=flat-square" />
 </p>
 
 ---
