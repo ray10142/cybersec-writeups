@@ -25,7 +25,7 @@ Based in Tunisia — actively building toward remote junior roles.
 | Platform | Machines / Rooms | Easy | Medium | Hard |
 |----------|-----------------|------|--------|------|
 | TryHackMe | 13 | 5 | 8 | 0 |
-| HackTheBox | 1 | 1 | 0 | 0 |
+| HackTheBox | 2 | 1 | 1 | 0 |
 | Blue Team Labs | 0 | — | — | — |
 
 > Updated regularly — each write-up is committed the same day.
@@ -69,6 +69,7 @@ cybersec-writeups/
 | 2026-06-05 | Dogcat | TryHackMe | Medium | `#linux` `#web` `#lfi` `#logpoisoning` `#php` `#docker` `#privesc` `#rce` |
 | 2026-06-06 | Dumping Router Firmware | TryHackMe | Easy | #firmware #iot #embedded-linux #binwalk #jffs2 #hardware |
 | 2026-06-09 | Poster | TryHackMe | Medium | #postgresql #metasploit #rce #privesc #credential-harvesting #linux |
+| 2026-10-08 | Abducted | Hack The Box | Medium | #samba #command-injection #rclone #credential-reuse #wide-links #polkit #systemd #privesc #linux |
 ---
 
 ## 🛠️ Tools & skills
