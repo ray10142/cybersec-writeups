@@ -80,6 +80,3 @@ cybersec-writeups/
 
 ---
 
-<p align="center">
-  <i>Write-ups published 6 days a week. Every machine documented.</i>
-</p>
