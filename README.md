@@ -55,21 +55,21 @@ cybersec-writeups/
 <!-- UPDATE THIS LIST each time you publish a new write-up -->
 | Date | Name | Platform | Difficulty | Tags |
 |------|------|----------|------------|------|
-| 2026-05-25 | RootMe | TryHackMe | Easy | `#linux` `#fileupload` `#suid` |
-| 2026-05-25 | Appointment | HackTheBox | Easy | `#linux` `#sqli` `#authentication-bypass` |
-| 2026-05-25 | Ignite | TryHackMe | Easy | `#rce` `#cve` `#credentials` |
-| 2026-05-27 | Pickle Rick | TryHackMe | Easy | `#rce` `#web` `#privesc` `#credentials` |
-| 2026-05-27 | Kenobi | TryHackMe | Easy | `#smb` `#nfs` `#proftpd` `#suid` `#privesc` |
-| 2026-05-27 | Blue | TryHackMe | Easy | `#windows` `#eternalblue` `#ms17-010` `#metasploit` |
-| 2026-05-28 | Mr Robot CTF | TryHackMe | Medium | `#wordpress` `#hydra` `#rce` `#suid` `#privesc` |
-| 2026-05-30 | Anonymous | TryHackMe | Medium | `#ftp` `#cronjob` `#suid` `#privesc` |
-| 2026-05-30 | Wonderland | TryHackMe | Medium | `#python` `#library-hijacking` `#path-hijacking` `#capabilities` |
-| 2026-05-31 | Creative | TryHackMe | Medium | `#ssrf` `#vhost` `#ld_preload` `#privesc` |
-| 2026-06-05 | Attacktive Directory | TryHackMe | Medium | `#activedirectory` `#kerberos` `#asreproasting` `#dcsync` `#passthehash` |
-| 2026-06-05 | Dogcat | TryHackMe | Medium | `#linux` `#web` `#lfi` `#logpoisoning` `#php` `#docker` `#privesc` `#rce` |
-| 2026-06-06 | Dumping Router Firmware | TryHackMe | Easy | `#firmware` `#iot` `#embedded-linux` `#binwalk` `#jffs2` `#hardware` |
-| 2026-06-09 | Poster | TryHackMe | Medium | `#postgresql` `#metasploit` `#rce` `#privesc` `#credential-harvesting` `#linux` |
 | 2026-10-07 | Abducted | Hack The Box | Medium | `#samba` `#command-injection` `#rclone` `#credential-reuse` `#wide-links` `#polkit` `#systemd` `#privesc` `#linux` |
+| 2026-06-09 | Poster | TryHackMe | Medium | `#postgresql` `#metasploit` `#rce` `#privesc` `#credential-harvesting` `#linux` |
+| 2026-06-06 | Dumping Router Firmware | TryHackMe | Easy | `#firmware` `#iot` `#embedded-linux` `#binwalk` `#jffs2` `#hardware` |
+| 2026-06-05 | Dogcat | TryHackMe | Medium | `#linux` `#web` `#lfi` `#logpoisoning` `#php` `#docker` `#privesc` `#rce` |
+| 2026-06-05 | Attacktive Directory | TryHackMe | Medium | `#activedirectory` `#kerberos` `#asreproasting` `#dcsync` `#passthehash` |
+| 2026-05-31 | Creative | TryHackMe | Medium | `#ssrf` `#vhost` `#ld_preload` `#privesc` |
+| 2026-05-30 | Wonderland | TryHackMe | Medium | `#python` `#library-hijacking` `#path-hijacking` `#capabilities` |
+| 2026-05-30 | Anonymous | TryHackMe | Medium | `#ftp` `#cronjob` `#suid` `#privesc` |
+| 2026-05-28 | Mr Robot CTF | TryHackMe | Medium | `#wordpress` `#hydra` `#rce` `#suid` `#privesc` |
+| 2026-05-27 | Blue | TryHackMe | Easy | `#windows` `#eternalblue` `#ms17-010` `#metasploit` |
+| 2026-05-27 | Kenobi | TryHackMe | Easy | `#smb` `#nfs` `#proftpd` `#suid` `#privesc` |
+| 2026-05-27 | Pickle Rick | TryHackMe | Easy | `#rce` `#web` `#privesc` `#credentials` |
+| 2026-05-25 | Ignite | TryHackMe | Easy | `#rce` `#cve` `#credentials` |
+| 2026-05-25 | Appointment | HackTheBox | Easy | `#linux` `#sqli` `#authentication-bypass` |
+| 2026-05-25 | RootMe | TryHackMe | Easy | `#linux` `#fileupload` `#suid` |
 ---
 
 ## 🛠️ Tools & skills
