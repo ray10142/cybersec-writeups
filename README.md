@@ -67,9 +67,9 @@ cybersec-writeups/
 | 2026-05-31 | Creative | TryHackMe | Medium | `#ssrf` `#vhost` `#ld_preload` `#privesc` |
 | 2026-06-05 | Attacktive Directory | TryHackMe | Medium | `#activedirectory` `#kerberos` `#asreproasting` `#dcsync` `#passthehash` |
 | 2026-06-05 | Dogcat | TryHackMe | Medium | `#linux` `#web` `#lfi` `#logpoisoning` `#php` `#docker` `#privesc` `#rce` |
-| 2026-06-06 | Dumping Router Firmware | TryHackMe | Easy | #firmware #iot #embedded-linux #binwalk #jffs2 #hardware |
-| 2026-06-09 | Poster | TryHackMe | Medium | #postgresql #metasploit #rce #privesc #credential-harvesting #linux |
-| 2026-10-07 | Abducted | Hack The Box | Medium | #samba #command-injection #rclone #credential-reuse #wide-links #polkit #systemd #privesc #linux |
+| 2026-06-06 | Dumping Router Firmware | TryHackMe | Easy | `#firmware` `#iot` `#embedded-linux` `#binwalk` `#jffs2` `#hardware` |
+| 2026-06-09 | Poster | TryHackMe | Medium | `#postgresql` `#metasploit` `#rce` `#privesc` `#credential-harvesting` `#linux` |
+| 2026-10-07 | Abducted | Hack The Box | Medium | `#samba` `#command-injection` `#rclone` `#credential-reuse` `#wide-links` `#polkit` `#systemd` `#privesc` `#linux` |
 ---
 
 ## 🛠️ Tools & skills
