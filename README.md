@@ -12,7 +12,7 @@
 ## 👤 About me
 
 Cybersecurity enthusiast focused on **Blue Team (SOC/DFIR)** and **Penetration Testing**.
-Based in Tunisia — actively building toward remote junior roles.
+Based in Tunisia — Looking for a 6-month end-of-studies internship starting February 2027.
 
 - 🔵 Blue Team: SOC analysis, threat hunting, SIEM, incident response
 - 🔴 Offensive: network pentest, web exploitation, privilege escalation
@@ -27,8 +27,6 @@ Based in Tunisia — actively building toward remote junior roles.
 | TryHackMe | 13 | 5 | 8 | 0 |
 | HackTheBox | 2 | 1 | 1 | 0 |
 | Blue Team Labs | 0 | — | — | — |
-
-> Updated regularly — each write-up is committed the same day.
 
 ---
 
@@ -52,7 +50,6 @@ cybersec-writeups/
 
 ## 📝 Latest write-ups
 
-<!-- UPDATE THIS LIST each time you publish a new write-up -->
 | Date | Name | Platform | Difficulty | Tags |
 |------|------|----------|------------|------|
 | 2026-10-07 | Abducted | Hack The Box | Medium | `#samba` `#command-injection` `#rclone` `#credential-reuse` `#wide-links` `#polkit` `#systemd` `#privesc` `#linux` |
