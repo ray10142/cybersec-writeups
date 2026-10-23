@@ -72,7 +72,7 @@ cybersec-writeups/
 ## 🛠️ Tools & skills
 
 `Nmap` `Gobuster` `Metasploit` `Burp Suite` `Wireshark` `Hydra`  
-`Splunk` `MITRE ATT&CK` `Volatility` `Autopsy` `Python` `Bash`  
+`MITRE ATT&CK` `Python` `Bash`  
 `Kali Linux` `TryHackMe` `HackTheBox`
 
 ---
